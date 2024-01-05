@@ -1,0 +1,74 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+text-decoration:none;
+font-family:poppins;
+	
+}
+body{
+	background-color:#ccc;
+
+}
+
+header{
+	top:0;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-around;
+	background-color:#30475e;
+	color:white;
+	padding: 20px 0;
+    position:sticky;
+	top: 0;
+	}
+
+	header nav a{
+	color:white;
+	margin-right:30px;
+	font-weight:550;
+	}
+	header div.sign-in-up button{
+	background-color:#75cfb8;
+	font-size:16px;
+	font-weight:550;
+	padding:4px 12px;
+	border:2px solid green;
+	border-radius:4px;
+	margin:20px,0;
+	outline:none;
+		}
+		header div.sign-in-up button:last-child{
+			background-color:bisque;
+		}
+
+		
+		.tablereg{
+			top:30px;
+			padding-left:150px;
+			padding-top:50px;
+			border:1px solid #C8BFE7;
+
+		}
+		table.reg{
+			padding:100px;
+			background-color:white;
+			width:40%;
+			opacity:0.5;
+			color:#30475e;
+			border-radius:20px;
+            
+		}
+		 table.reg{
+			border:1px solid #30475e;
+		}
+		
+		.about{
+			background-color:white;
+			width:100%;
+			padding:50px;
+		}
+  
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Application</title>
+</head>
+<body>
+<center>
+	<h1>Appliacalication Print</h1>
+	<div>
+		<form method="POST">
+		id:<input type="text" name="id"><br>
+        <input type="submit" name="search" value="search for application">
+        <input type="submit" name="submit">
+       </form>
+       <table border="1">
+       	<tr>
+       		<th>Frist name</th>
+       		<th>Last name</th>
+       		<th>Email</th>
+       		<th>Password</th>
+       		<th>Father</th>
+       		<th>Address</th>
+       		<th>Frist name</th>
+       		<th>Last name</th>
+       		<th>Email</th>
+       		<th>Password</th>
+       		<th>Father</th>
+       		
+       		
+       	</tr>
+       	<?php
+
+        require 'connect.php';
+        if (isset($_POST['search']))
+
+        {
+        	$name=$_POST['id'];
+            
+        	$query = "SELECT * FROM form1  where id='$name' or Fname='$name'";
+
+            $query_run = mysqli_query($mycon,$query);
+             while($row = mysqli_fetch_assoc($query_run))
+             {
+             	?>
+             	<tr>
+             		<td colspan="3"><?php echo $row['id'];?></td></tr>
+             		<tr>
+             		<td colspan="6"> <?php echo $row['name']; ?> </td>
+             	</tr>
+             		<td colspan="6"> <?php echo $row['Fname']; ?> </td></tr>
+             		<tr>
+                    <td colspan="6"> <?php echo $row['selc3']; ?> </td></tr>
+                    <tr>
+                    <td colspan="6"> <?php echo $row['Adhno']; ?> </td></tr>
+                    <tr>
+                    <td colspan="6"> <?php echo $row['mobile']; ?> </td></tr>
+                    <tr>
+             	    <td colspan="6"> <?php echo $row['email']; ?> </td></tr>
+             	</tr>
+             	
+             	<?php
+             }
+
+        }
+        
+        
+       	?>
+
+       </table>
+   </div>
+   
+</center>
+
+</body>
+</html>

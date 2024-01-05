@@ -1,0 +1,50 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+body{
+	background-color:#ccc;
+	background-position:center;
+	background-size:cover;
+}
+.container{
+	width:850px;
+	height:500px;
+	margin:8% auto;
+	background:white;
+	border-radius: 5px;
+	position:relative;
+	
+
+}
+button{
+	margin:20px;
+	width:150px;
+	background-color:#C8BFE7;
+	color:black;
+	padding:10px;
+	text-anchor:none;
+	border-radius:6px;
+	border:none;
+
+}
+button a.step{
+	text-decoration:none;
+	color:blue;
+	font-weight:900;
+
+	}
+	
+
+.container1
+{
+	width:800px;
+	height:200px;
+	margin:8% auto;
+	background:#ddd;
+	border-radius: 5px;
+	position:relative;
+	opacity:0.3;
+	
+}
